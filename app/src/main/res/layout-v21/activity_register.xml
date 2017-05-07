@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".activity.Register">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageViewCompany"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_network_wifi_150"
+        android:transitionName="company_icon" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/button_grey">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/inputFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:hint="First Name: "
+            android:inputType="textPersonName"
+            android:textColor="@color/indigo_700">
+
+            <requestFocus />
+        </android.support.v7.widget.AppCompatEditText>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:textColorHint="@color/button_grey">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/inputNameLast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:hint="Last Name: "
+            android:inputType="textPersonName"
+            android:textColor="@color/indigo_700" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:textColorHint="@color/button_grey">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/inputEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:hint="Email Address: "
+            android:inputType="textWebEmailAddress"
+            android:textColor="@color/indigo_700" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:textColorHint="@color/button_grey">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/inputMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:hint="Phone Number: "
+            android:inputType="number"
+            android:textColor="@color/indigo_700" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_request_sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:onClick="validate"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif-light"
+        android:background="@color/colorPrimaryDark"
+        android:text="Next"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+
+</LinearLayout>

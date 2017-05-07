@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            tools:context=".activity.Register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageViewCompany"
+                android:transitionName="profile"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="80dp"
+                android:src="@drawable/ic_network_wifi_150"
+                android:layout_height="80dp" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="@color/button_grey"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="20dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/inputName"
+                    android:textColor="@color/indigo_700"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_width="match_parent"
+                    android:inputType="textPersonName"
+                    android:layout_height="wrap_content"
+                    android:hint="First Name: ">
+
+                    <requestFocus/>
+                </android.support.v7.widget.AppCompatEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="@color/button_grey"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="8dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:textColor="@color/indigo_700"
+                    android:id="@+id/inputNameLast"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_width="match_parent"
+                    android:inputType="textPersonName"
+                    android:layout_height="wrap_content"
+                    android:hint="Last Name: "/>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="@color/button_grey"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="8dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:textColor="@color/indigo_700"
+                    android:id="@+id/inputEmail"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_width="match_parent"
+                    android:inputType="textWebEmailAddress"
+                    android:layout_height="wrap_content"
+                    android:hint="Email Address: "/>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="@color/button_grey"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="8dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:textColor="@color/indigo_700"
+                    android:id="@+id/inputMobile"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone Number: "/>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_marginTop="25dp"
+                android:id="@+id/btn_request_sms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="Next"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+
+</LinearLayout>

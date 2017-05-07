@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".activity.SignIn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageViewCompany"
+        android:transitionName="icon"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="80dp"
+        android:src="@drawable/ic_network_wifi_150"
+        android:layout_height="80dp" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:textColorHint="@color/button_grey"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="8dp">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:textColor="@color/indigo_700"
+            android:id="@+id/inputMobile"
+            android:fontFamily="sans-serif-light"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:hint="Type your Phone Number: "/>
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_marginTop="25dp"
+        android:transitionName="buttonx"
+        android:id="@+id/btn_request_sms"
+        android:layout_width="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:onClick="verify"
+        android:background="@color/colorPrimaryDark"
+        android:text="Next"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+
+
+</LinearLayout>
